@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<title> what time is it? </title>
+<head>
+  <!-- fonts -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Armata&family=Offside&family=Quicksand:wght@500&display=swap');
+  </style>
+
+<script src="https://unpkg.com/feather-icons"></script>
+
+<script>
+  feather.replace()
+</script>
+
+<!-- use: font-family: 'Armata', sans-serif;
+font-family: 'DotGothic16', sans-serif;
+font-family: 'Quicksand', sans-serif; -->
+
+    <!-- script that changes stylesheet -->
+    <link id="theme" rel="stylesheet"
+        type="text/css" href="morning.css" />
+
+    <script>
+        function toggleTheme(value) {
+
+            // Obtain the name of stylesheet
+            // as a parameter and set it
+            // using href attribute.
+            var sheets = document
+                .getElementsByTagName('link');
+
+            sheets[0].href = value;
+        }
+    </script>
+
+  <!--image + music change -->
+  <!-- images -->
+  <script>
+//all small images by @pixelins on tumblr!!
+    function changeSmallImage(imgName)
+    {
+       image = document.getElementById('smallimage');
+       image.src = imgName;
+    }
+
+  </script>
+
+  <script>
+  // all thought gifs made using https://www.earthboundtext.com/ 
+
+    function changeThought(imgName) {
+      image = document.getElementById('thoughts');
+      image.src = imgName;
+    }
+
+  </script>
+
+  <script>
+// all large images by my girlfriend kenzie :3
+  function changeLargeImage(imgName)
+  {
+     image = document.getElementById('largeimage');
+     image.src = imgName;
+  }
+  </script>
+
+<!--audio-->
+  <script>
+  function changeAudio(songName) {
+    audio = document.getElementById("song"); song.src = songName;
+  }
+  </script>
+
+
+<!-- changing text scripts argh -->
+
+
+
+<!-- morning ----------------------------------------->
+
+<script>
+    function reloadPage(){
+        location.reload(true);
+    }
+</script>
+
+<!--afternoon------------------------------------------>
+    <script>
+function changeAfternoon() {
+  document.getElementById("time").innerHTML = "2:34 PM";
+
+  document.getElementById("time-of-day").innerHTML = "afternoon <i class='fas fa-wind'></i>";
+
+  document.getElementById("main-text").innerHTML = "<p style='margin-left:2%'><i class='fas fa-quote-left'></i> That which villagers called 'the rains of October' was the accumulation of the serenity of such a life. Eyes almost broke into tears on looking at the sun subdividing itself, at the end of the afternoon, in each drop of that snail's-pace precipitation, as if the great star had dissolved each day an infinitesimal bit more. <i class='fas fa-quote-right'></i> - <a href='https://www.goodreads.com/book/show/1945504.The_Whistler'>Ondjaki</a></p>";
+
+  document.getElementById("activities-title").innerHTML = "afternoon activities";
+
+  document.getElementById("sidebartxt-activities").innerHTML = "<i class='fas fa-angle-right'></i> <span>take a break from work</span> <br><i class='fas fa-angle-right'></i> <span>pet cat</span> <br><i class='fas fa-angle-right'></i> <span>work on tumblr theme</span> <br><i class='fas fa-angle-right'></i> <span>finish essay (lol)</span> <br><i class='fas fa-angle-right'></i> <span>have a snack</span>";
+
+  document.getElementById("foods-title").innerHTML = "afternoon foods";
+
+  document.getElementById("sidebartxt-food").innerHTML = '<p> ice cream <i class="fas fa-star"></i> crackers <i class="fas fa-star"></i> sandwich <i class="fas fa-star"></i> mac and cheese <i class="fas fa-star"></i> chips <i class="fas fa-star"></i> soda <i class="fas fa-star"></i> green beans <i class="fas fa-star"></i> yogurt';
+
+  document.getElementById("thoughts-title").innerHTML = "afternoon thoughts";
+
+  document.getElementById("song-title").innerHTML = "<marquee scrollamount = 3> now playing: とびだせどうぶつの森　2 P.M.</marquee>";
+
+}
+</script>
+
+<!-- end afternoon ----------------------------------->
+
+<!-- night --------------------------------------->
+<script>
+function changeNight() {
+document.getElementById("time").innerHTML = "11:27 PM";
+
+document.getElementById("time-of-day").innerHTML = "night <i class='fas fa-meteor'></i>";
+
+document.getElementById("main-text").innerHTML = "<p style='margin-left:2%'><i class='fas fa-quote-left'></i> Then take a shower, wash off the day. Drink a glass of water. Make the room dark. Lie down and close your eyes.  Notice the silence. Notice your heart. Still beating. Still fighting. You made it, after all. You made it, another day. And you can make it one more. You’re doing just fine.  You’re doing fine. <i class='fas fa-quote-right'></i> - <a href='https://www.goodreads.com/book/show/25560582-you-re-doing-just-fine'>Charlotte Eriksson</a></p>";
+
+document.getElementById("activities-title").innerHTML = "nighttime activities";
+
+document.getElementById("sidebartxt-activities").innerHTML = "<i class='fas fa-angle-right'></i> <span>make tea</span> <br><i class='fas fa-angle-right'></i> <span>read book before bed</span> <br><i class='fas fa-angle-right'></i> <span>talk with friends if possible</span> <br><i class='fas fa-angle-right'></i> <span>play a video game</span> <br><i class='fas fa-angle-right'></i> <span>go to sleep!!</span>";
+
+document.getElementById("foods-title").innerHTML = "nighttime foods";
+
+document.getElementById("sidebartxt-food").innerHTML = '<p> tea <i class="fas fa-star"></i> ramen <i class="fas fa-star"></i> dark chocolate <i class="fas fa-star"></i> cookie <i class="fas fa-star"></i> blackberry <i class="fas fa-star"></i> glass of water <i class="fas fa-star"></i> fruit snacks <i class="fas fa-star"></i> popcorn';
+
+document.getElementById("thoughts-title").innerHTML = "nighttime thoughts";
+
+document.getElementById("song-title").innerHTML = "<marquee scrollamount = 3> now playing: とびだせどうぶつの森　11 P.M.</marquee>";
+
+
+}
+
+</script>
+
+<!-- end night ----------------------------------------->
+
+    <!-- icons by iconsax -->
+<script src="https://kit.fontawesome.com/644965d351.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- middle boxes -->
+  <div class="container-main">
+
+<!-- back box -->
+    <div class="box1">
+      <div class="computer-bar">
+<i class="fas fa-circle fa-xs" style="margin-left:5px; color:red;"></i>
+<i class="fas fa-circle fa-xs" style="color:grey"></i>
+<i class="fas fa-circle fa-xs" style="color:green;"></i>
+      </div>
+      <img id="largeimage" src="images/morning/morning2.png">
+      </div>
+<!-- front box -->
+    <div class="box2">
+    <div class="smallimage">
+        <img id="smallimage" src="images/morning/morning1.png" style="width:300px;">
+    </div>
+      <div class="computer-bar">
+<i class="fas fa-circle fa-xs" style="margin-left:5px; color:red;"></i>
+<i class="fas fa-circle fa-xs" style="color:yellow"></i>
+<i class="fas fa-circle fa-xs" style="color:green;"></i>
+      </div>
+    <  <div id="time">
+        10:17 AM
+      </div>
+      <div id="time-of-day">
+        morning <i class="fas fa-sun"></i>
+      </div>
+      <div id="main-text">
+        <p style="margin-left:2%"><i class="fas fa-quote-left"></i> Outside, there was that predawn kind of clarity, where the momentum of living has not quite captured the day. The air was not filled with conversation or thought bubbles or laughter or sidelong glances. Everyone was sleeping, all of their ideas and hopes and hidden agendas entangled in the dream world, leaving this world clear and crisp and cold as a bottle of milk in the fridge. <i class="fas fa-quote-right"></i> - <a href="https://www.goodreads.com/book/show/6065179-the-selected-works-of-t-s-spivet">Reif Larsen</a></p>
+    </div>
+
+      </div>
+  </div>
+
+
+<!-- sidebar -->
+  <div class="sidebar">
+    <div class="computer-bar" style="width:30%">
+<i class="fas fa-circle fa-xs" style="margin-left:5px; color:red;"></i>
+<i class="fas fa-circle fa-xs" style="color:yellow"></i>
+<i class="fas fa-circle fa-xs" style="color:green;"></i>
+    </div>
+
+    <!-- box 3 -->
+    <div class="sidebar-boxes three" style="margin-top:40px;">
+          <div class="computer-bar"style="background:none;">
+            <div id="thoughts-title">
+              morning thoughts
+            </div>
+            </div>
+            <img id = "thoughts" src="images/morning/morning_thought.gif">
+      </div>
+
+    <!-- box 1 -->
+    <div class="sidebar-boxes one">
+          <div class="computer-bar"style="background:none;">
+            <div id="activities-title">
+              morning activities
+            </div>
+            <div id="sidebartxt-activities">
+              <i class="fas fa-angle-right"></i> <span>wake up</span>
+              <br><i class="fas fa-angle-right"></i> <span>brush teeth</span>
+              <br><i class="fas fa-angle-right"></i> <span>eat breakfast</span>
+              <br><i class="fas fa-angle-right"></i> <span>feed cat</span>
+              <br><i class="fas fa-angle-right"></i> <span>water plants</span>
+            </div>
+            </div>
+      </div>
+
+    <!-- box 2 -->
+    <div class="sidebar-boxes two">
+          <div class="computer-bar"style="background:none;">
+            <div id="foods-title">
+            morning foods
+          </div>
+          <div id="sidebartxt-food">
+            <p> eggs <i class="fas fa-star"></i> cereal <i class="fas fa-star"></i> pancakes <i class="fas fa-star"></i> oatmeal <i class="fas fa-star"></i> toast + butter <i class="fas fa-star"></i> toast + jam <i class="fas fa-star"></i> strudel <i class="fas fa-star"></i> french toast
+          </div>
+
+            </div>
+      </div>
+
+    <!-- box 4 -->
+    <div class="sidebar-boxes four">
+          <div class="computer-bar" style="background:none;">
+            <div class="music-title">
+            <img src="images/music-player.gif" style = "display:inline; position:relative;width:20px;">
+              music box
+            </div>
+            </div>
+            <div class="music-container">
+              <p><div id ="song-title"> <marquee scrollamount = 3> now playing: とびだせどうぶつの森　10 A.M.</marquee> </div></p>
+              <div class="progress-container">
+              <div class="currentTime"></div>
+              <div class="durationTime"></div>
+              <img src="images/morning/play.gif" onclick="playPause()" id="play-pause">
+              <audio src="images/morning/morning.mp3" id="song"></audio>
+              <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
+
+<input
+    type="range"
+    id="progress-bar"
+    min="0"
+    max=""
+    value="0"
+    onchange="changeProgressBar()"
+/>
+
+
+ <script src="player.js"></script>
+</div>
+</div>
+</div>
+            </div>
+      </div>
+    </div>
+
+<!-- end sidebar -->
+
+<!-- change time buttons -->
+    <div class="button-container">
+    <button onclick="toggleTheme('morning.css'); reloadPage()">
+       <i class ="sunrise" data-feather="sunrise"></i>
+    </button>
+
+    <button onclick="toggleTheme('afternoon.css');changeAfternoon(); changeSmallImage('images/afternoon/afternoon1.png'); changeThought('images/afternoon/afternoon_thought.gif'); changeAudio('images/afternoon/afternoon.mp3'); changeLargeImage('images/afternoon/afternoon.png')">
+      <i class ="sun" data-feather="sun"></i>
+    </button>
+
+    <button onclick="toggleTheme('night.css');changeNight(); changeSmallImage('images/night/night1.png'); changeThought('images/night/night_thought.gif'); changeAudio('images/night/night.mp3'); changeLargeImage('images/night/night.png')">
+      <i class ="moon" data-feather="moon"></i>
+    </button>
+    </div>
+
+<!-- end buttons -->
+<script>feather.replace()</script>
+</body>
+
+</html>
